@@ -1,0 +1,19 @@
+#label {
+  display: block;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 200;
+}
+.container {
+  text-align: center;
+}
+.buttons {
+  text-align: center;
+  background-color: greenyellow;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons:hover {
+  background-color: hsl(84, 100%, 80%);
+}

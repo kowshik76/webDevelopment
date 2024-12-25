@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.card {
+  width: 80%; /* Reduced the width */
+  max-width: 350px; /* Reduced the maximum width */
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 50px auto; /* Reduced top margin */
+  border-radius: 15px; /* Slightly smaller border radius */
+  padding: 30px 20px; /* Reduced padding */
+  text-align: center;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px; /* Slightly reduced the border radius */
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 8px 20px; /* Reduced padding */
+  height: 50px; /* Reduced height */
+  border-radius: 25px; /* Slightly reduced the border radius */
+  flex: 1;
+  margin-right: 8px; /* Reduced margin */
+  font-size: 16px; /* Smaller font size */
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50px;
+  width: 50px; /* Reduced button width */
+  height: 50px; /* Reduced button height */
+  cursor: pointer;
+}
+
+.search button img {
+  width: 15px; /* Reduced image size */
+}
+
+.weather-icon {
+  width: 120px; /* Reduced the weather icon size */
+  margin-top: 20px; /* Reduced margin */
+  height: auto;
+}
+
+.weather h1 {
+  font-size: 60px; /* Reduced font size */
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 35px; /* Reduced font size */
+  font-weight: 400;
+  margin-top: -5px;
+}
+
+/* Updated styling for columns */
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0; /* Reduced padding */
+  margin-top: 30px; /* Reduced margin */
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  margin: 5px; /* Reduced margin */
+  justify-content: space-between;
+  text-align: left;
+}
+
+.column img {
+  width: 50px; /* Reduced the image size */
+  margin-right: 10px;
+}
+
+.wind,
+.humidity {
+  font-size: 22px; /* Reduced font size */
+  margin-top: -4px;
+}
+.weather {
+  display: none;
+}
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+}

@@ -1,0 +1,122 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  text-align: center;
+  background: linear-gradient(90deg, #ffcc00, #ff9900);
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  animation: headerAnimation 2s ease-in-out;
+}
+header h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+header p {
+  font-size: 1.2em;
+  margin: 5px 0 0;
+}
+.bio-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  border-radius: 10px;
+}
+.bio-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  width: 300px;
+}
+.bio-info {
+  max-width: 600px;
+  padding: 20px;
+  animation: fadeIn 2s ease;
+}
+
+.bio-info h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.bio-info p {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+.works-section {
+  text-align: center;
+  padding: 40px;
+  background-color: #ffcc00;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  animation: slideUp 2s ease;
+}
+.works-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.works-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+.works-section li {
+  font-size: 1.2em;
+  padding: 5px;
+}
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 15px;
+  margin-top: auto;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes headerAnimation {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 768px) {
+  .bio-section {
+    flex-direction: column;
+  }
+  .bio-info {
+    padding: 10px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    hsla(223, 39%, 45%, 0.848),
+    hsla(303, 27%, 51%, 0.685)
+  );
+}
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#clock {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
